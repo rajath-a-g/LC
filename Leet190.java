@@ -12,11 +12,9 @@ public class Leet190 {
         if (n == 0) return 0;
         int result = 0;
         for (int i = 0; i < 32; i++) {
-            System.out.println("Result in loop:" + result);
             result <<= 1;
             if ((n & 1) == 1) result++;
             n >>= 1;
-            System.out.println("N in loop:" + n);
         }
         return result;
     }
