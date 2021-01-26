@@ -8,8 +8,9 @@ public class MinimumPath {
     static int[] dirs = {0, 1, 0, -1, 0};
 
     public static void main(String[] args) {
-        System.out.println("Max diff:" + minimumEffortPath(new int[][] {{1,2,2},{3,8,2},{5,3,5}}));
+        System.out.println("Max diff:" + minimumEffortPath(new int[][]{{1, 2, 2}, {3, 8, 2}, {5, 3, 5}}));
     }
+
     public static int minimumEffortPath(int[][] heights) {
         int rowLen = heights.length, colLen = heights[0].length;
         int[][] dist = new int[rowLen][colLen];
@@ -32,7 +33,6 @@ public class MinimumPath {
                     }
                 }
             }
-
         }
         return 0;
     }
