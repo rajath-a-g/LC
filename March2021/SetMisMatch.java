@@ -6,8 +6,8 @@ import java.util.Set;
 
 public class SetMisMatch {
     public static void main(String[] args) {
-        System.out.println("Erronums are" + Arrays.toString(findErrorNums(new int[]{1, 2, 2, 4})));
-        System.out.println("Erronums are" + Arrays.toString(findErrorNums(new int[]{1,1})));
+        System.out.println("Error nums are " + Arrays.toString(findErrorNums(new int[]{1, 2, 2, 4})));
+        System.out.println("Error nums are" + Arrays.toString(findErrorNums(new int[]{1,1})));
     }
     public static int[] findErrorNums(int[] nums) {
         Set<Integer> set = new HashSet<>();
